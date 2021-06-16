@@ -3,7 +3,6 @@ const { Keystone } = require("@keystonejs/keystone");
 const { PasswordAuthStrategy } = require("@keystonejs/auth-password");
 const { GraphQLApp } = require("@keystonejs/app-graphql");
 const { AdminUIApp } = require("@keystonejs/app-admin-ui");
-const initialiseData = require("./initial-data");
 const { MongooseAdapter: Adapter } = require("@keystonejs/adapter-mongoose");
 const { createItems } = require("@keystonejs/server-side-graphql-client");
 
@@ -19,8 +18,8 @@ const stainSchema = require('./lists/Stain');
 
 /******  Imported Colors *******/
 // const { sherwinColors } = require("./seed-data/colors");
-const { swInteriorStains } = require("./seed-data/interiorStain");
-const { swExteriorStains } = require("./seed-data/exteriorStain");
+// const { swInteriorStains } = require("./seed-data/interiorStain");
+// const { swExteriorStains } = require("./seed-data/exteriorStain");
 // TODO: interior/exterior stain
 /******  Imported Colors *******/
 
